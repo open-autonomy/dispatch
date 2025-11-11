@@ -11,8 +11,8 @@
 | `"FuelLevel"`           | shall     | integer      | %    | Current Fuel level                   |
 | `"TotalMachineHour"`    | should    | decimal      | h    | Number of hours the Machine has been running       |
 | `"TotalEngineHour"`     | shall     | decimal      | h    | Number of hours the Machine has been running        | 
-| `"Tire"`               | should    | Array&lt;TireStatus&gt; | -    | A list of tire information       | 
-| `"Additional"`         | may       | Array&lt;SensorReading&gt;      | -    | Additional sensor measurements |
+| `"Tire"`               | should    | Array&lt;[TireStatus](#tire-status-object)&gt; | -    | A list of tire information       | 
+| `"Additional"`         | may       | Array&lt;[SensorReading](#sensor-reading-object)&gt;      | -    | Additional sensor measurements |
 
 > [!NOTE]
 > The "Additional" field allows for flexibility in reporting various sensor data that may be specific to different machine types or configurations. FMS users should refer to OEM documentation for details on the specific sensors and their meanings.

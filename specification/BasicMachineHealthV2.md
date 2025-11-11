@@ -12,7 +12,7 @@
 | `"TotalMachineHour"`    | should    | decimal      | h    | Number of hours the Machine has been running       |
 | `"TotalEngineHour"`     | shall     | decimal      | h    | Number of hours the Machine has been running        | 
 | `"Tire"`               | should    | Array<TireStatus> | -    | A list of tire information       | 
-| `"Additional"`         | may       | Array<SensorReading>      | -    | Additional sensor measurements, see [Additional Information](./AdditionalInformation.md) for details. |
+| `"Additional"`         | may       | Array<SensorReading>      | -    | Additional sensor measurements |
 
 ### Tire Status Object
 
@@ -33,6 +33,9 @@ The Sensor Reading Object is used to represent additional sensor measurements th
 | `"SensorId"`      | shall     | string  | -    | Unique identifier for the sensor      |       
 | `"Value"`        | shall     | decimal | -    | Measured value from the sensor       |
 | `"Unit"`         | shall      | string  | -    | Unit of the measured value       |
+
+> [!NOTE]
+> The "Additional" field allows for flexibility in reporting various sensor data that may be specific to different machine types or configurations.
 
 
 # BasicMachineHealthV2 Message Example

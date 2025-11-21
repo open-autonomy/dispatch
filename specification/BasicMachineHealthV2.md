@@ -4,21 +4,25 @@
 |---|---|
 |`AHS` |  At Runtime change |
 
+> [!IMPORTANT]
+> All numeric attributes in `BasicMachineHealthV2` **may be null**.\
+> A `null` value **shall indicate** that the corresponding sensor value or signal is unavailable or that a measurement error occurred.\
+> Implementations **shall not** substitute default numeric values for missing data.
 ## Message attributes
 
 | Key                  | Req. Level | Type          | Unit  | Description                                             |
 |-------------------------|-----------|--------------|------|---------------------------------------------------------|
-| `"FuelLevel"`           | shall     | integer      | %    | Current Fuel level                   |
-| `"TotalMachineHour"`    | should    | decimal      | h    | Number of hours the Machine has been running       |
-| `"TotalEngineHour"`     | shall     | decimal      | h    | Number of hours the Machine has been running        | 
+| `"FuelLevel"`           | shall     | integer      | %    | Current Fuel level as percentage of full capacity. Range 0-100.    |
+| `"TotalMachineHour"`    | should    | decimal      | h    | Number of hours the Machine has been running.       |
+| `"TotalEngineHour"`     | shall     | decimal      | h    | Number of hours the Engine has been running.        | 
 | `"Tire"`               | should    | Object Array | -    | A list of tire information       | 
 
 ### Array Of `[ ]`
 | Key             | Req. Level | Type    | Unit  | Description                            | 
 |-------------------|-----------|--------|------|--------------------------------|
-| `"TirePosition"`  | shall     | string  | -    |           |       
-| `"TirePressure"`  | shall     | integer | kPa  | Pressure for the actual tire      |
-| `"TireTemperature"` | shall     | integer | °C   | Temperature for the actual tire       |
+| `"TirePosition"`  | shall     | string  | -    | Tire position identifier, as defined in ISO 23725:2023, Clause 4.2.5     |       
+| `"TirePressure"`  | shall     | integer | kPa  | Pressure for the actual tire.                                            |
+| `"TireTemperature"` | shall     | integer | °C   | Temperature for the actual tire.                                       |
 
 # BasicMachineHealthV2 Message Example
 ```json

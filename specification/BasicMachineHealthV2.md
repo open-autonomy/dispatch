@@ -4,6 +4,10 @@
 |---|---|
 |`AHS` |  At Runtime change |
 
+> [!IMPORTANT]
+> All numeric attributes in `BasicMachineHealthV2` **may be null**.\
+> A `null` value **shall indicate** that the corresponding sensor value or signal is unavailable or that a measurement error occurred.\
+> Implementations **shall not** substitute default numeric values for missing data.
 ## Message attributes
 
 | Key                  | Req. Level | Type          | Unit  | Description                                             |
@@ -24,9 +28,9 @@ The Tire Status Object is used to represent the status of individual tires on th
 
 | Key             | Req. Level | Type    | Unit  | Description                            | 
 |-------------------|-----------|--------|------|--------------------------------|
-| `"TirePosition"`  | shall     | string  | -    |           |       
-| `"TirePressure"`  | shall     | integer | kPa  | Pressure for the actual tire      |
-| `"TireTemperature"` | shall     | integer | °C   | Temperature for the actual tire       |
+| `"TirePosition"`  | shall     | string  | -    | Tire position identifier, as defined in ISO 23725:2023, Clause 4.2.5     |       
+| `"TirePressure"`  | shall     | integer | kPa  | Pressure for the actual tire.                                            |
+| `"TireTemperature"` | shall     | integer | °C   | Temperature for the actual tire.                                       |
 
 ### Sensor Reading Object
 

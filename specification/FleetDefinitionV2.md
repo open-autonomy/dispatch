@@ -19,7 +19,7 @@ This message is the first message sent by both actors at connection.
 | `"Equipment"`     | shall | Array of objects | List of equipments. Can be empty but not null        |
 | `"EquipmentId"`     | shall | GUID           | Unique key for the specific equipment          | 
 |`"HID"`            | shall | String         |  Human readable string (name) for the equipment                    | 
-|`"StationId"`      | may | Integer         |  Unique V2X Station ID (if available)                   |
+|`"StationId"`      | may | String         |  Unique V2X Station ID (if available)                   |
 |`"Type"`           | shall | Enumeration    |  Category (see furhter down)                                                   | 
 | `"OEM"`          | shall | String         | Original Equipment Manufacturer                                         | 
 | `"Model"`       | shall | String         | OEM model name                                                   | 
@@ -77,7 +77,7 @@ Only valid enumerations from the list below shall be used as **Type**:
       {
         "EquipmentId": "3f4964b3-66a2-41ef-89b1-83b5af0da44e",
         "HID": "LV033",
-        "StationId": 12345,
+        "StationId": "12345",
         "Type": "LightVehicle",
         "OEM": "Toyota",
         "Model": "Landcruiser",

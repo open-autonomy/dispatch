@@ -27,16 +27,16 @@
     {"ComponentId": 14, "FaultCode": 9999 }
   ],
   "MachinePositionV1": {
-  "Timestamp": "2025-01-31T09:40:20.316Z",
-  "Heading":"222",
-  "Latitude":"65.176854",
-  "Longitude":"-23.071800",
-  "Elevation":"2.23",
-  "LatitudeAccuracy":"0.31",
-  "LongitudeAccuracy":"0.27",
-  "HeightAccuracy":"0.58",
-  "HeadingAccuracy":"2.1",
-  "Speed":"43.1"
+    "Timestamp": "2025-01-31T09:40:20.316Z",
+    "Heading":"222",
+    "Latitude":"65.176854",
+    "Longitude":"-23.071800",
+    "Elevation":"2.23",
+    "LatitudeAccuracy":"0.31",
+    "LongitudeAccuracy":"0.27",
+    "HeightAccuracy":"0.58",
+    "HeadingAccuracy":"2.1",
+    "Speed":"43.1"
   }
 }
 ```
@@ -51,16 +51,16 @@
   "MachineDiagnosticV2": [
   ],
   "MachinePositionV1": {
-  "Timestamp": "2025-01-31T09:40:20.316Z",
-  "Heading":"222",
-  "Latitude":"65.176854",
-  "Longitude":"-23.071800",
-  "Elevation":"2.23",
-  "LatitudeAccuracy":"0.31",
-  "LongitudeAccuracy":"0.27",
-  "HeightAccuracy":"0.58",
-  "HeadingAccuracy":"2.1",
-  "Speed":"43.1"
+    "Timestamp": "2025-01-31T09:40:20.316Z",
+    "Heading":"222",
+    "Latitude":"65.176854",
+    "Longitude":"-23.071800",
+    "Elevation":"2.23",
+    "LatitudeAccuracy":"0.31",
+    "LongitudeAccuracy":"0.27",
+    "HeightAccuracy":"0.58",
+    "HeadingAccuracy":"2.1",
+    "Speed":"43.1"
   }
 }
 ```

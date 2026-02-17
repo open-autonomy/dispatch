@@ -21,7 +21,7 @@ Each Fault Data `key:value` pair is specific to the `CID:FaultCode` from a parti
 | `"FaultData"`            | shall      | Dictionary<`string`:`string`> | -    | An object/dictionary containing additional contextual data in key/value pairs of strings | `"Coolant Temp"`:`"186.2"`  |
 
 
-# MachineDiagnosticV2 Message Example
+# MachineDiagnosticV3 Message Example
 ### Two active faults
 ```json
 {
@@ -29,14 +29,14 @@ Each Fault Data `key:value` pair is specific to the `CID:FaultCode` from a parti
   "Version": 1,
   "Timestamp": "2025-01-31T09:40:20.316Z",
   "EquipmentId": "1c558480-cb1c-4bae-bbc7-89b12516aca5",
-  "MachineDiagnosticV2": [
+  "MachineDiagnosticV3": [
     {
       "ComponentId": 555,
       "FaultCode": 2110,
       "FaultData":
       {
-        {"Coolant Temp In": "130.5"},
-        {"Coolant Temp Out": "186.2"}
+        "Coolant Temp In": "130.5",
+        "Coolant Temp Out": "186.2"
       }
     },
     {
@@ -67,8 +67,7 @@ Each Fault Data `key:value` pair is specific to the `CID:FaultCode` from a parti
   "Version": 1,
   "Timestamp": "2025-01-31T09:40:20.316Z",
   "EquipmentId": "1c558480-cb1c-4bae-bbc7-89b12516aca5",
-  "MachineDiagnosticV3": [
-  ],
+  "MachineDiagnosticV3": [],
   "MachinePositionV1": {
     "Timestamp": "2025-01-31T09:40:20.316Z",
     "Heading":"222",
